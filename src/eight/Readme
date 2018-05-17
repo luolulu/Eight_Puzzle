@@ -1,0 +1,37 @@
+===============
+=== READ ME ===
+===============
+NAME:LU LUO UIN:226003066
+
+This is a program of 6 search algorithm to solve 8 puzzle.
+
+The entrance of main function is in the eight.java
+There are 6 search algorithm are DFSearch, BFSearch, IDSearch, Greedy, AStarSearch and IDAStarSearch, all these algorithm are in the function of Problemsolver.java.
+
+===============
+==== Usage ====
+===============
+The direction of this program:
+
+Breadth-first ('bfs')
+
+Depth-first search ('dfs')
+
+Iterative Deepening Search('ids')
+
+Gready best-first search(‘greedy’)
+
+A* Search ( ‘A1’ means outofplace or ‘A2’ means manhattan )
+IDA* Search(‘IDA2’ means manhattan or ‘IDA1’ means outofplace)
+
+Compilation:
+	javac eight.java
+
+Example usage for bfs:
+	java  ProblemSolver -d bfs 1 3 4 8 6 2 7 0 5
+Example usage for dfs:
+	java -Xmx1024m ProblemSolver dfs 1 3 4 8 6 2 7 0 5
+
+Same usage for other algorithm
+
+there have some circumstances we get no result from some search algorithm because of out of memory.
